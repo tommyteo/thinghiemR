@@ -1,0 +1,11 @@
+``` r
+x<-rnorm(20)
+y<-rnorm(20)*0.5 + x*0.5
+dulieu <-cbind(y,x)
+library(ggplot2)
+ggplot(data=dulieu) + geom_point(aes(x=y,y=y))
+#> Error in `fortify()`:
+#> ! `data` must be a data frame, or other object coercible by `fortify()`, not a numeric vector.
+```
+
+<sup>Created on 2022-07-15 by the [reprex package](https://reprex.tidyverse.org) (v2.0.1)</sup>
